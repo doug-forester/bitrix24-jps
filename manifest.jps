@@ -1,0 +1,23 @@
+jpsType: install
+jpsVersion: '1.0.0'
+id: bitrix24
+name: Bitrix24 Standalone
+logo: bitrix24_box.svg
+categories:
+    - apps/e-commerce
+    - apps/sales-and-marketing
+homepage: http://www.buildingbridge.com/
+description:
+  en: Bitrix24 is a collaberative business software and platform trusted by many companies world wide!
+
+baseUrl: 
+
+onBeforeInit: 
+
+globals:
+
+onInstall:
+
+success:
+  email: success/email/success.md?_r=${fn.random}
+  text: success/text/success.md?_r=${fn.random}
