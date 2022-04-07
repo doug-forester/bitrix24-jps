@@ -2,7 +2,7 @@ jpsType: install
 jpsVersion: '1.0.0'
 id: bitrix24
 name: Bitrix24 Standalone
-logo: images/bitrix24_box.svg
+logo: images/bitrix24-logo.svg
 homepage: http://www.buildingbridge.com/
 description: Bitrix24 is a collaberative business software and platform trusted by many companies world wide!
 categories:
