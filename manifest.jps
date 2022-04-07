@@ -2,15 +2,16 @@ jpsType: install
 jpsVersion: '1.0.0'
 id: bitrix24
 name: Bitrix24 Standalone
-logo: bitrix24_box.svg
+logo: images/bitrix24_box.svg
+homepage: http://www.buildingbridge.com/
+description: Bitrix24 is a collaberative business software and platform trusted by many companies world wide!
 categories:
     - apps/e-commerce
     - apps/sales-and-marketing
-homepage: http://www.buildingbridge.com/
-description:
-  en: Bitrix24 is a collaberative business software and platform trusted by many companies world wide!
+baseUrl: https://raw.githubusercontent.com/doug-forester/bitrix24-jps/master 
 
-baseUrl: 
+mixins:
+  - configs/vers.yaml
 
 onBeforeInit: 
 
@@ -18,6 +19,5 @@ globals:
 
 onInstall:
 
-success:
-  email: success/email/success.md?_r=${fn.random}
-  text: success/text/success.md?_r=${fn.random}
+success: |
+  Below you will find your URL, username and password.
