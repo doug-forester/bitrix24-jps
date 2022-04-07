@@ -1,5 +1,5 @@
 jpsType: install
-jpsVersion: '1.5.0'
+jpsVersion: '1.5.2'
 id: bitrix24
 name: Bitrix24 Standalone
 logo: images/bitrix24-logo.svg
@@ -14,7 +14,9 @@ mixins:
   - configs/vers.yaml
 
 globals:
-
+  IS_JELASTIC_SSL: false
+  PROTOCOL: http
+  
 settings:
   fields:
   - type: string
@@ -36,3 +38,4 @@ onInstall: /scripts/bitrix-env.sh
 
 success: |
   Below you will find your URL, username and password.
+  
