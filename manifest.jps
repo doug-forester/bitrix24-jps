@@ -1,10 +1,10 @@
 jpsType: install
-jpsVersion: '1.0.0'
+jpsVersion: '1.5.0'
 id: bitrix24
 name: Bitrix24 Standalone
 logo: images/bitrix24-logo.svg
 homepage: http://www.buildingbridge.com/
-description: Bitrix24 is a collaberative business software and platform trusted by many companies world wide!
+description: Bitrix24 is a collaborative business software and platform trusted by many companies world wide!
 categories:
     - apps/e-commerce
     - apps/sales-and-marketing
@@ -13,11 +13,26 @@ baseUrl: https://raw.githubusercontent.com/doug-forester/bitrix24-jps/master
 mixins:
   - configs/vers.yaml
 
-onBeforeInit: 
-
 globals:
 
-onInstall:
+settings:
+  fields:
+  - type: string
+    name: license
+    caption: Bitrix License 
+    default: 0000-1111-2222-3333
+
+onBeforeInit: 
+
+nodes:
+- cloudlets: 16
+  nodeGroup: cp
+  image: centos:centos7.9.2009
+  extip: true
+  env:
+    JELASTIC_EXPOSE: 80, 443
+
+onInstall: /scripts/bitrix-env.sh
 
 success: |
   Below you will find your URL, username and password.
