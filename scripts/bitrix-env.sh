@@ -32,7 +32,7 @@ MBE0001="Log file path: "
 # Description of the script options: 
  # Running automatic pool creation after installing the package
 MBE0002="Create management pool after installing $BX_PACKAGE package."
-#Using a quiet mode when installing.
+# Using a quiet mode when installing.
 MBE0003="Use silent mode (don't query for information)."
 # Server name that will be used when creating a pool
 MBE0004="Set server name for management pool creation procedure."
@@ -40,13 +40,13 @@ MBE0004="Set server name for management pool creation procedure."
 MBE0005="Set root password for MySQL service."
 # Use the test version of the package for the surroundings
 MBE0006="Use alpha/test version of Bitrix Environment."
-Using IPTables as a firewall (Default: CentOS 6)
+# Using IPTables as a firewall (Default: CentOS 6)
 MBE0007="Use iptables as firewall service daemon (default for Centos 6)"
-Using Firewalld as a firewall (Default: CentOS 7)
+# Using Firewalld as a firewall (Default: CentOS 7)
 MBE0008="Use firewalld as firewall service daemon (default for Centos 7 system)"
 # Examples of using:
 MBE0009="Examples:"
-Installing BX_Package Package and Pool-Control Setup:
+# Installing BX_Package Package and Pool-Control Setup:
 MBE0010="install $BX_PACKAGE-package and configure management pool:"
 # Installation BX_Package packet and installing MySQL password;
 MBE0011="install $BX_PACKAGE-package and set mysql root password:"
