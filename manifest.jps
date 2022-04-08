@@ -10,9 +10,6 @@ categories:
     - apps/sales-and-marketing
 baseUrl: https://raw.githubusercontent.com/doug-forester/bitrix24-jps/master 
 
-mixins:
-  - configs/vers.yaml
-
 globals:
   IS_JELASTIC_SSL: false
   PROTOCOL: http
@@ -34,8 +31,11 @@ nodes:
   env:
     JELASTIC_EXPOSE: 80, 443
 
-onInstall: /scripts/bitrix-env.sh
+OnInstall:
+   curl -fsSL "https://raw.githubusercontent.com/doug-forester/bitrix24-jps/master/scripts/bitrix-env.sh" -o /root
+
 
 success: |
   Below you will find your URL, username and password.
   
+  URL: [${env.protocol}://${env.domain}/
